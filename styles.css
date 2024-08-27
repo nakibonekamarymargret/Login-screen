@@ -1,0 +1,180 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.login-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.login-icon i.user {
+    font-size: 40px; 
+    background-color: white !important; 
+    color: rgb(112, 107, 107);
+    padding: 20px; 
+    border-radius: 50%; 
+    border: 1px solid blacK; 
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me label {
+    margin-left: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.input-wrapper i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+    font-size: 16px;
+}
+
+.input-wrapper input[type="text"], .input-wrapper input[type="password"] {
+    width: 100%;
+    padding: 10px 10px 10px 35px; /* Add left padding to make space for the icon */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-wrapper input[type="text"]:focus + i,
+.input-wrapper input[type="password"]:focus + i {
+    color: #007bff; /* Change icon color on focus */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.social-login button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.social-login button i.google-icon {
+    margin-right: 10px;
+    background: linear-gradient(45deg, #4285F4, #DB4437, #F4B400, #0F9D58);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-login button i.facebook-icon {
+    margin-right: 10px;
+    color: white; 
+
+}
+
+.social-login button.google-login {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.social-login button.google-login:hover {
+    background-color: #f2f2f2;
+}
+
+.social-login button.facebook-login {
+    background-color: #3b5998;
+    color: white;
+    margin-top: 10px ; 
+    padding-top: 10px ;
+    border-radius: 20px
+}
+
+.social-login button.facebook-login:hover {
+    background-color: #334d84;
+}
+
+.social-login button {
+    margin-bottom: 10px; 
+}
+.social-login button:hover {
+    opacity: 0.9;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}

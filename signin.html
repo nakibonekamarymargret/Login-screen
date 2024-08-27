@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Screen</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/90e163a4d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-icon">
+            <i class=" user fa-regular fa-user"></i>
+        </div>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+    <label for="username">Username</label>
+    <div class="input-wrapper">
+        <i class="user-icon fa-regular fa-user"></i>
+        <input type="text" id="username" name="username" required>
+    </div>
+    <small class="error" id="usernameError"></small>
+</div>
+<div class="form-group">
+    <label for="password">Password</label>
+    <div class="input-wrapper">
+        <i class="password-icon fa-solid fa-lock"></i>
+        <input type="password" id="password" name="password" pattern="[a-z0-5]{8,}" required>
+    </div>
+    <small class="error" id="passwordError"></small>
+</div>
+
+            <div class="form-group remember-me">
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <label for="rememberMe">Remember Me</label>
+            </div>
+            <button type="submit">Login</button>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+
+            <div class="social-login">
+    <button type="button" class="google-login">
+        <i class="google-icon fa-brands fa-google"></i> Login with Google
+    </button>
+    <button type="button" class="facebook-login">
+        <i class="facebook-icon fa-brands fa-facebook-f"></i> Login with Facebook
+    </button>
+</div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
